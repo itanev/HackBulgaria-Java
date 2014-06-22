@@ -4,8 +4,6 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-import javax.swing.text.DateFormatter;
-
 public class DateLogger extends Logger {
 	
 	public DateLogger(int level) {
@@ -13,7 +11,7 @@ public class DateLogger extends Logger {
 	}
 	
 	public DateLogger() {
-		this(3);
+		super();
 	}
 	
 	@Override

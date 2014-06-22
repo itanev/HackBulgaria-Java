@@ -1,12 +1,16 @@
 package exercises;
 
 public class Logger {
-	protected int defaultLevel;
+	protected final int defaultLevel = 3;
 	protected int currentLevel;
+	
+	public Logger()
+	{
+		currentLevel = defaultLevel;
+	}
 	
 	public Logger(int level) {
 		
-		defaultLevel = level;
 		currentLevel = level;
 	}
 	
